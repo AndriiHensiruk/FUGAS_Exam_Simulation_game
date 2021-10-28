@@ -7,15 +7,15 @@ private:
     int Rank;
     std::string Name;
 public:
-    Player(std::string playerName)
+    Player(int id, std::string playerName,  int rank)
     {
         Name = playerName;
-        Id = 0;
-        Rank = 0;
+        Id = id;
+        Rank = rank;
     }
-    ~Player() {}
-
-    long getCurrentId() const;
-    int getRank() const;
-    std::string getPlayerName() const;
+    void CreatePlayer();
+    void DeletePlayer();
+    long GetPlayerById() const;
+    int ShowPlayerInfo() const;
+    std::string GetPlayerByName() const;
 };

@@ -15,10 +15,10 @@ public:
         HP = 0;
         Damage = 0;
     }
-    ~Hero() {}
-
-    long getCurrentId() const;
-    int getHP() const;
-    int getDamage() const;
-    std::string getHeroName() const;
+    
+    void CreateHero();
+    long GetHeroById() const;
+    int ShowHeroInfo() const;
+    void DeleteHero();
+    std::string GetHeroByName() const;
 };

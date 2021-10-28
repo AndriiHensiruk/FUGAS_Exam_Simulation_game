@@ -1,148 +1,25 @@
 ﻿#include<iostream>
+#include <vector>
 #include "Player.h"
 #include "Hero.h"
 
-//class Player
-//{
-//public:
-//	int Id;
-//	char Name[30];
-//	int Rang;
-//};
-//
-//class Hero
-//{
-//public:
-//	int Id;
-//	char Name[30];
-//	int HP;
-//	int Damage;
-//};
-//class PlayerManager
-//{
-//	void CreatePlayer()
-//	{
-//
-//	}
-//
-//	void GetPlayerByName()
-//	{
-//
-//	}
-//
-//	void GetPlayerById()
-//	{
-//
-//	}
-//
-//	void DeletePlayer()
-//	{
-//
-//	}
-//
-//	void ShowPlayerInfo()
-//	{
-//
-//	}
-//
-//};
-//
-//class HeroManager
-//{
-//	void CreateHero()
-//	{
-//
-//	}
-//
-//	void GetHeroByName()
-//	{
-//
-//	}
-//
-//	void GetHeroById()
-//	{
-//
-//	}
-//
-//	void DeleteHero()
-//	{
-//
-//	}
-//
-//	void ShowHeroInfo()
-//	{
-//
-//	}
-//
-//};
-//
-//class Team
-//{
-//public:
-//	char name;
-//};
-//
-//class TeamManager
-//{
-//	void GenerateNewTeam()
-//	{
-//
-//	}
-//
-//	void GetTeamInfo()
-//	{
-//
-//	}
-//};
-//
-//class Session
-//{
-//	void StartTime()
-//	{
-//
-//	}
-//
-//	void TeamOne()
-//	{
-//
-//	}
-//
-//	void TeamTwo()
-//	{
-//
-//	}
-//
-//	void Winner()
-//	{
-//
-//	}
-//
-//	void CalculateWinner()
-//	{
-//
-//	}
-//
-//};
-//
-//class GameManager
-//{
-//	void PerformGameSession()
-//	{
-//
-//	}
-//};
 
 int main()
 {
-	Player player("Vasy");
+	Player player(12,"hgfh",7);
 
-	std::string pName = player.getPlayerName();
+	std::string pName = player.GetPlayerByName();
 	std::cout << pName << std::endl;
 
 	Hero hero("Pety");
 
-	std::string hName = hero.getHeroName();
+	std::string hName = hero.GetHeroByName();
 	std::cout << hName << std::endl;
+
+	int totalPlayers = 5;
+	//std::vector<Player> players(totalPlayers);
+	//delete[] players;
+
 	return 0;
 }
 
