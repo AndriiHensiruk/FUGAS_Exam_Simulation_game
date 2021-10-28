@@ -18,12 +18,18 @@
     <ClCompile Include="Game.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="Hero.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
       <Filter>Файлы ресурсов</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h">
+    <ClInclude Include="Hero.h">
       <Filter>Файлы ресурсов</Filter>
     </ClInclude>
   </ItemGroup>
