@@ -4,8 +4,6 @@
 void Hero::CreateHero()
 {
 
-
-
 }
 long Hero::GetHeroById() const
 {

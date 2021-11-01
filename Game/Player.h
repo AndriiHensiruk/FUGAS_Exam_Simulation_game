@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <list>
 class Player
 {
 private:
@@ -7,13 +8,16 @@ private:
     int Rank;
     std::string Name;
 public:
-    Player(int id, std::string playerName,  int rank)
+    Player(int playerid, std::string playerName,  int playerrank)
     {
         Name = playerName;
-        Id = id;
-        Rank = rank;
+        Id = playerid;
+        Rank = playerrank;
     }
-    void CreatePlayer();
+
+    
+
+    void CreatePlayer(Player& players);
     void DeletePlayer();
     long GetPlayerById() const;
     int ShowPlayerInfo() const;
