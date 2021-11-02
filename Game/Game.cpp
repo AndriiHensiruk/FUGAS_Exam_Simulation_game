@@ -6,10 +6,10 @@
 
 int main()
 {
-	//Player player("hgfh");
+	/*Player player;
 
-	//std::string pName = player.GetPlayerByName();
-	//std::cout << pName << std::endl;
+	std::string pName = player.GetPlayerByName();
+	std::cout << pName << std::endl;*/
 
 	Hero hero("Pety");
 

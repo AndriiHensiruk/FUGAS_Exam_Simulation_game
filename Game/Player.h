@@ -14,10 +14,13 @@ public:
         Id = playerid;
         Rank = playerrank;
     }
+    Player()
+    {
 
+    }
     
 
-    void CreatePlayer(Player& players);
+    void CreatePlayer();
     void DeletePlayer();
     long GetPlayerById() const;
     int ShowPlayerInfo() const;
