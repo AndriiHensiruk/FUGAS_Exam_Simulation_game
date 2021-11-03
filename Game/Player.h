@@ -1,26 +1,23 @@
 #pragma once
 #include <string>
-#include <list>
+#include <vector>
 class Player
 {
 private:
     int Id;
     int Rank;
     std::string Name;
-public:
-    Player(int playerid, std::string playerName,  int playerrank)
-    {
-        Name = playerName;
-        Id = playerid;
-        Rank = playerrank;
-    }
-    Player()
-    {
-
-    }
+    int numNames;
+    std::vector<std::string> nContainer;
     
-
-    void CreatePlayer();
+public:
+    
+   
+    Player();
+    static Player& Inst() { static Player PlayerVX3000; return PlayerVX3000; }
+    ~Player();
+  
+    std::string CreatePlayer();
     void DeletePlayer();
     long GetPlayerById() const;
     int ShowPlayerInfo() const;

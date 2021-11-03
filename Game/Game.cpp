@@ -6,10 +6,12 @@
 
 int main()
 {
-	/*Player player;
+	Player player;
+
+	player.CreatePlayer();
 
 	std::string pName = player.GetPlayerByName();
-	std::cout << pName << std::endl;*/
+	std::cout << pName << std::endl;
 
 	Hero hero("Pety");
 

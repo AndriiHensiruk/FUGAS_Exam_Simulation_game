@@ -1,31 +1,64 @@
 #include <string>
-//#include <vector>
 #include "Player.h"
 
+Player::Player()
+{
+	numNames = 10;
+//create character names
+std::string* temp = new std::string[numNames];
+temp[0] = "Raphael";
+temp[1] = "Elizabeth";
+temp[2] = "Lucius";
+temp[3] = "Seigfried";
+temp[4] = "Edward";
+temp[5] = "Mirabelle";
+temp[6] = "Abraham";
+temp[7] = "Hildegard";
+temp[8] = "Fendrel";	//perhaps in the future could add in some way to store titles for a character | ex. Fendrel the Wicked
+temp[9] = "Ulric";
+
+//store them in the name vector
+for (int i = 0; i < numNames; i++)
+{
+	nContainer.push_back(temp[i]);
+}
+}
+float frn() {
+	float randNum = float(rand());
+	return randNum / RAND_MAX;
+}
+
+//create a random int between a - b | truncates towards 0
+int GetRandomInt(float a, float b)
+{
+	if (a >= b) // bad input
+		return a;
+
+	return int((frn() * (b - a)) + a);
+}
+
+//create random int between a - b | only works with positive numbers
+int GetTrueRandomInt(int a, int b)
+{
+	if (a >= b)	// bad input
+		return a;
+
+	int c = (b - a) + 1;
+	return rand() % c + a;
+}
 
 
-void Player::CreatePlayer()
+
+std::string Player::CreatePlayer()
+{
+	if (!nContainer.empty())
 	{
-	std::list< Player > players {
-    { 1, "slime", 15 },
-    { 2, "imp", 15 },
-    { 3, "leprechaun", 45},
-    { 4, "golem", 20 },
-    { 5, "ghost", 25 },
-    { 6, "demon", 25 },
-    { 7, "goblin", 35 },
-    { 8, "pixie", 25 },
-    { 9, "mutant", 30 },
-    {10, "vampire", 30},
-    {11, "werewolf", 35},
-    {12, "zombie", 35},
-    {13, "cyclops", 40 },
-    {14, "sasquatch", 40},
-    {16, "phoenix", 100},
-    {17,  "dragon", 100 }
-	};
-
+		int roll = GetTrueRandomInt(0, nContainer.size() - 1);
+		std::string val = nContainer.at(roll);
+		nContainer.erase(nContainer.begin() + roll);	//remove that name from container since it has been assigned
+		return val;
 	}
+}
 
 std::string Player::GetPlayerByName() const
 {

@@ -1,4 +1,3 @@
-﻿  Game.cpp
-  PlayerManager.cpp
-  Создание кода...
-  Game.vcxproj -> C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\Debug\Game.exe
+﻿Game.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Player::~Player(void)" (??1Player@@QAE@XZ) в функции _main.
+PlayerManager.obj : error LNK2001: неразрешенный внешний символ "public: __thiscall Player::~Player(void)" (??1Player@@QAE@XZ).
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\Debug\Game.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
