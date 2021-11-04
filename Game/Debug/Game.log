@@ -1,3 +1,7 @@
-﻿Game.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Player::~Player(void)" (??1Player@@QAE@XZ) в функции _main.
-PlayerManager.obj : error LNK2001: неразрешенный внешний символ "public: __thiscall Player::~Player(void)" (??1Player@@QAE@XZ).
-C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\Debug\Game.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
+﻿  Game.cpp
+  HeroManager.cpp
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(5,1): error C2600: Hero::Hero: нельзя определить специальную функцию-член, созданную компилятором (сначала необходимо объявить ее в классе)
+  PlayerManager.cpp
+  TeamManager.cpp
+  Создание кода...
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(37): warning C4715: Player::CreatePlayer: значение возвращается не при всех путях выполнения
