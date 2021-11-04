@@ -13,10 +13,10 @@ int main()
 	std::string pName = player.GetPlayerByName();
 	std::cout << pName << std::endl;
 
-	Hero hero("Pety");
+	/*Hero hero("Pety");
 
 	std::string hName = hero.GetHeroByName();
-	std::cout << hName << std::endl;
+	std::cout << hName << std::endl;*/
 
 	
 

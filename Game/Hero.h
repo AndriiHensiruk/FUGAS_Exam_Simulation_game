@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <vector>
 class Hero
 {
 private:
@@ -7,14 +8,12 @@ private:
     int HP;
     int Damage;
     std::string Name;
+    int numHNames;
 public:
-    Hero (std::string heroName)
-    {
-        Name = heroName;
-        Id = 0;
-        HP = 0;
-        Damage = 0;
-    }
+
+
+    std::vector<std::string> hContainer;
+
     
     void CreateHero();
     long GetHeroById() const;

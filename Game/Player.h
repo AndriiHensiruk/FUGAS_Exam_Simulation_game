@@ -14,7 +14,7 @@ public:
     
    
     Player();
-    static Player& Inst() { static Player PlayerVX3000; return PlayerVX3000; }
+  
     ~Player();
   
     std::string CreatePlayer();
