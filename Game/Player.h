@@ -3,14 +3,14 @@
 #include <vector>
 class Player
 {
-private:
+
+    
+    
+    
+public:
     int Id;
     std::string Name;
     int Rang;
-    std::vector<Player>players;
-    
-public:
-    
    
   
     void CreatePlayer();

@@ -1,10 +1,13 @@
 #include <string>
+#include <iostream>
 #include "Player.h"
+#include "PlayerManager.h"
 
 void CreatePlayer(Player& nyw_player)
 {
+
     //create character names
-    std::string* temp = new std::string;
+    std::string* temp = new std::string[10];
     temp[0] = "Raphael";
     temp[1] = "Elizabeth";
     temp[2] = "Lucius";
@@ -21,6 +24,7 @@ void CreatePlayer(Player& nyw_player)
         nyw_player.Name = temp[i];
         nyw_player.Id = rand() % 100;
         nyw_player.Rang = rand() % 100;
+
         players.push_back(nyw_player);
     }
     //delete our string arrays
@@ -28,22 +32,24 @@ void CreatePlayer(Player& nyw_player)
 
 }
 
-std::string Player::GetPlayerByName() const
+void GetPlayerByName()
 {
-   return Name;
+
+    for (auto& np : players)
+    {
+        std::cout << "Name " << np.Name << "\n";
+    }
 }
-
-long Player::GetPlayerById() const
+void GetPlayerById()
 {
-	return Id;
+    for (auto& np : players)
+    {
+        std::cout << "ID " << np.Id << "\n";
+    }
+
 }
-
-void Player::DeletePlayer()
-	{
-	Player::~Player() ;
-	}
-
-int Player::ShowPlayerInfo() const
+void DeletePlayer()
 {
-	return Rang;
+    for (auto& np : players)
+        players.pop_back();
 }
