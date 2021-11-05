@@ -6,15 +6,17 @@
 
 int main()
 {
-	/*Player player;
+	Player player;
+
+	player.CreatePlayer();
 
 	std::string pName = player.GetPlayerByName();
-	std::cout << pName << std::endl;*/
+	std::cout << pName << std::endl;
 
-	Hero hero("Pety");
+	/*Hero hero("Pety");
 
 	std::string hName = hero.GetHeroByName();
-	std::cout << hName << std::endl;
+	std::cout << hName << std::endl;*/
 
 	
 

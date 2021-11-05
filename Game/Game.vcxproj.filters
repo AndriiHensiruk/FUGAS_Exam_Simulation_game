@@ -24,12 +24,21 @@
     <ClCompile Include="PlayerManager.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
+    <ClCompile Include="TeamManager.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
       <Filter>Файлы ресурсов</Filter>
     </ClInclude>
     <ClInclude Include="Hero.h">
+      <Filter>Файлы ресурсов</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerManager.h">
+      <Filter>Файлы ресурсов</Filter>
+    </ClInclude>
+    <ClInclude Include="Team.h">
       <Filter>Файлы ресурсов</Filter>
     </ClInclude>
   </ItemGroup>

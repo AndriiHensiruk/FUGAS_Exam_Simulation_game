@@ -1,6 +1,10 @@
 #include <string>
 #include "Hero.h"
 
+Hero::Hero()
+{
+
+}
 void Hero::CreateHero()
 {
 
