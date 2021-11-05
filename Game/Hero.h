@@ -11,7 +11,8 @@ private:
     int numHNames;
 public:
 
-
+    Hero();
+    ~Hero();
     std::vector<std::string> hContainer;
 
     

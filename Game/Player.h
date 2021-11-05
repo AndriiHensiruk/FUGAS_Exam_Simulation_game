@@ -5,19 +5,15 @@ class Player
 {
 private:
     int Id;
-    int Rank;
     std::string Name;
-    int numNames;
-    std::vector<std::string> nContainer;
+    int Rang;
+    std::vector<Player>players;
     
 public:
     
    
-    Player();
   
-    ~Player();
-  
-    std::string CreatePlayer();
+    void CreatePlayer();
     void DeletePlayer();
     long GetPlayerById() const;
     int ShowPlayerInfo() const;
