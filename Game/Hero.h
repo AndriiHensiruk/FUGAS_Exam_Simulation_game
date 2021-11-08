@@ -1,24 +1,15 @@
-
-#include <string>
-#include <vector>
+#pragma once
 class Hero
 {
-private:
-    int Id;
-    int HP;
-    int Damage;
-    std::string Name;
-    int numHNames;
 public:
+    int Id;
+    std::string Name;
+    int HP;
+    long Damage;
 
-    Hero();
-    ~Hero();
-    std::vector<std::string> hContainer;
-
-    
-    void CreateHero();
-    long GetHeroById() const;
-    int ShowHeroInfo() const;
-    void DeleteHero();
-    std::string GetHeroByName() const;
+    long getHeroById() const;
+    int getHeroByHP() const;
+    long getHeroByDamage() const;
+    std::string getHeroByName() const;
 };
+

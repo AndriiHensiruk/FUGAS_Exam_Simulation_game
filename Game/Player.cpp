@@ -1,16 +1,16 @@
 #include <string>
 #include "Player.h"
-long Player::getCurrentId() const
+long Player::getPlayerById() const
 {
     return Id;
 }
 
-int Player::getRank() const
+int Player::gettPlayerByRank() const
 {
     return Rank;
 }
 
-std::string Player::getPlayerName() const
+std::string Player::getPlayerByName() const
 {
     return Name;
 }
