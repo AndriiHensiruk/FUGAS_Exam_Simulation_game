@@ -8,8 +8,8 @@ public:
     std::string Name;
     int Rank;
 
-    long getPlayerById() const;
-    std::string getPlayerByName() const;
-    int gettPlayerByRank() const;
+    long getId() const;
+    std::string getName() const;
+    int getRank() const;
 };
 

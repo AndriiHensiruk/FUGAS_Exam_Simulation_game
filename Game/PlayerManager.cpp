@@ -1,5 +1,4 @@
 #include "PlayerManager.h"
-
 Player PlayerManager::CreatePlayer(Player& nyw_player)
 {
 
@@ -27,5 +26,28 @@ Player PlayerManager::CreatePlayer(Player& nyw_player)
     //delete our string arrays
     delete[] temp;
     return nyw_player;
-
 }
+
+Player PlayerManager::getPlayerByName(std::string name)
+    {
+        for (int i = 0; i < players.size(); i++)
+        {
+            if (players[i].Name == name)
+                return players[i];
+        }
+}
+
+Player PlayerManager::getPlayerById(int id)
+{
+    for (int i = 0; i < players.size(); i++)
+    {
+        if (players[i].Id == id)
+            return players[i];
+    }
+}
+
+void PlayerManager::showPlayerInfo(Player player)
+{
+    std::cout <<"ID  " << player.getId() << "\tName\t" << player.getName() << "\tRank\t" << player.getRank() << "\n";
+}
+
