@@ -21,7 +21,7 @@ Player PlayerManager::CreatePlayer(Player& nyw_player)
         nyw_player.Id = rand() % 100;
         nyw_player.Rank = rand() % 100;
 
-        players.push_back(nyw_player);
+        playersList.push_back(nyw_player);
     }
     //delete our string arrays
     delete[] temp;
@@ -30,20 +30,27 @@ Player PlayerManager::CreatePlayer(Player& nyw_player)
 
 Player PlayerManager::getPlayerByName(std::string name)
     {
-        for (int i = 0; i < players.size(); i++)
+        for (int i = 0; i < playersList.size(); i++)
         {
-            if (players[i].Name == name)
-                return players[i];
+            if (playersList[i].Name == name)
+                return playersList[i];
         }
 }
 
 Player PlayerManager::getPlayerById(int id)
 {
-    for (int i = 0; i < players.size(); i++)
+    for (int i = 0; i < playersList.size(); i++)
     {
-        if (players[i].Id == id)
-            return players[i];
+        if (playersList[i].Id == id)
+            return playersList[i];
     }
+}
+
+void PlayerManager::DeletePlayer(int index)
+{
+    std::vector<Player>::iterator iterator = playersList.begin();
+    std::advance(iterator, index);
+    playersList.erase(iterator);
 }
 
 void PlayerManager::showPlayerInfo(Player player)

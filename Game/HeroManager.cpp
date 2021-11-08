@@ -1,30 +1,30 @@
-#include <string>
-#include "Hero.h"
+#include "HeroManager.h"
 
-Hero::Hero()
+Hero HeroManager::CreateHero(Hero& nyw_hero)
 {
+	//create team names
+	std::string* temph = new std::string[5];
+	temph[0] = "Slime";
+	temph[1] = "Dragon";
+	temph[2] = "Cyclops";
+	temph[3] = "Goblin";
+	temph[4] = "Demon";
 
-}
-void Hero::CreateHero()
-{
+	//store them in the name vector
+	for (int i = 0; i < 5; i++)
+	{
+		nyw_hero.Name = temph[i];
+		nyw_hero.Id = rand() % 100;
+		nyw_hero.HP = rand() % 100;
+		
 
-}
-long Hero::GetHeroById() const
-{
-    return Id;
-}
+		herosList.push_back(nyw_hero);
+	}
 
-int Hero::ShowHeroInfo() const
-{
-    return HP, Damage;
-}
-
-void Hero::DeleteHero() 
-{
-    Hero::~Hero();
-}
-
-std::string Hero::GetHeroByName() const
-{
-    return Name;
+	//delete our string arrays
+	
+	delete[] temph;
+    //store them in the name vector
+    
+    return nyw_hero;
 }

@@ -1,4 +1,6 @@
 #pragma once
+#include "string"
+
 class Hero
 {
 public:
@@ -7,9 +9,11 @@ public:
     int HP;
     long Damage;
 
-    long getHeroById() const;
-    int getHeroByHP() const;
-    long getHeroByDamage() const;
-    std::string getHeroByName() const;
+    Hero() {};
+
+    long getId() const;
+    int getHP() const;
+    long getDamage() const;
+    std::string getName() const;
 };
 

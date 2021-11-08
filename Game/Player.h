@@ -11,5 +11,7 @@ public:
     long getId() const;
     std::string getName() const;
     int getRank() const;
+
+   
 };
 

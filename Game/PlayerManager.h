@@ -3,7 +3,7 @@
 class PlayerManager
 {
 public:
-	std::vector<Player>players;
+	std::vector<Player>playersList;
 	
 	Player CreatePlayer(Player& nyw_player);
 
@@ -12,6 +12,8 @@ public:
 	Player getPlayerById(int id);
 
 	void showPlayerInfo(Player player);
+
+	void DeletePlayer(int index);
 
 };
 

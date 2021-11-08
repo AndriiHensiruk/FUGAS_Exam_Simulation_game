@@ -1,21 +1,21 @@
 #include <string>
 #include "Hero.h"
-long Hero::getHeroById() const
+long Hero::getId() const
 {
     return Id;
 }
 
-int Hero::getHeroByHP() const
+int Hero::getHP() const
 {
     return HP;
 }
 
-long Hero::getHeroByDamage() const
+long Hero::getDamage() const
 {
     return Damage;
 }
 
-std::string Hero::getHeroByName() const
+std::string Hero::getName() const
 {
     return Name;
 }
