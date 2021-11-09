@@ -59,3 +59,17 @@ void HeroManager::DeleteHero(int index)
 	std::advance(iterator, index);
 	herosList.erase(iterator);
 }
+
+Hero HeroManager::RandHero()
+{
+	srand((unsigned)time(NULL));
+	int a;
+	a = (rand() % herosList.size());
+	Hero hero = herosList[a];
+
+	std::vector<Hero>::iterator iterator = herosList.begin();
+	std::advance(iterator, a);
+	herosList.erase(iterator);
+
+	return hero;
+}

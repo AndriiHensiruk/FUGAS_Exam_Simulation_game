@@ -15,5 +15,7 @@ public:
 
 	void DeletePlayer(int index);
 
+	Player RandPlayer();
+
 };
 

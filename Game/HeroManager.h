@@ -11,5 +11,7 @@ public:
 	Hero getHeroByById(int id);
 	void showHeroInfo(Hero hero);
 	void DeleteHero(int index);
+
+	Hero RandHero();
 };
 

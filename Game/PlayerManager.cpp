@@ -59,3 +59,13 @@ void PlayerManager::showPlayerInfo(Player player)
     std::cout <<"ID  " << player.getId() << "\tName\t" << player.getName() << "\tRank\t" << player.getRank() << "\n";
 }
 
+Player PlayerManager::RandPlayer()
+{
+    srand((unsigned)time(NULL));
+    int a;
+    a = (rand() % playersList.size());
+    Player player = playersList[a];
+
+    DeletePlayer(a);
+    return player;
+}
