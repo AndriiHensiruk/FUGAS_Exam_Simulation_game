@@ -1,4 +1,5 @@
 #include "PlayerManager.h"
+#include<iostream>
 Player PlayerManager::CreatePlayer(Player& nyw_player)
 {
 

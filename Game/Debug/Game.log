@@ -1,9 +1,2 @@
-﻿  Game.cpp
-  Player.cpp
-  PlayerManager.cpp
-C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(33,27): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(42,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(58,10): error C2039: "cout": не является членом "std".
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\vector(24): message : см. объявление "std"
-C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(58,15): error C2065: cout: необъявленный идентификатор
-  Создание кода...
+﻿  Team.cpp
+  Game.vcxproj -> C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\Debug\Game.exe

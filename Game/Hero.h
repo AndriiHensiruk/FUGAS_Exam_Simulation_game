@@ -9,7 +9,7 @@ public:
     int HP;
     long Damage;
 
-    Hero() {};
+    
 
     long getId() const;
     int getHP() const;
