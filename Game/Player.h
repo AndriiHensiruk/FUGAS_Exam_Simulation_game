@@ -12,6 +12,6 @@ public:
     std::string getName() const;
     int getRank() const;
 
-   
+    void SetRank(int newRank);
 };
 

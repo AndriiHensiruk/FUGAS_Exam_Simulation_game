@@ -5,6 +5,7 @@
 
 class TeamManager
 {
+public:
 	Team GenerateNewTeam(std::string TeamName);
 
 	void GetTeamInfo(Team& team);

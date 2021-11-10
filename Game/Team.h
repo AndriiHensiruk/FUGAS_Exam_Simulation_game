@@ -3,6 +3,7 @@
 #include "Hero.h"
 
 
+
 class Team
 {
 public:
@@ -11,7 +12,8 @@ public:
 	Hero HerosList[5];
 
 
-	
+	Team() { };
+
 	Team(std::string name, Player playersList[5], Hero herosList[5]);
 
 	

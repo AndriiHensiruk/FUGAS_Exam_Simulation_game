@@ -1,8 +1,14 @@
-﻿  PlayerManager.cpp
+﻿  GameManager.cpp
+  HeroManager.cpp
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(35,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(44,20): warning C4018: <: несоответствие типов со знаком и без знака
+  PlayerManager.cpp
 C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(34,27): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(43,23): warning C4018: <: несоответствие типов со знаком и без знака
   TeamManager.cpp
   Создание кода...
 C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(48): warning C4715: PlayerManager::getPlayerById: значение возвращается не при всех путях выполнения
 C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(39): warning C4715: PlayerManager::getPlayerByName: значение возвращается не при всех путях выполнения
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(49): warning C4715: HeroManager::getHeroByById: значение возвращается не при всех путях выполнения
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(40): warning C4715: HeroManager::getHeroByName: значение возвращается не при всех путях выполнения
   Game.vcxproj -> C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\Debug\Game.exe

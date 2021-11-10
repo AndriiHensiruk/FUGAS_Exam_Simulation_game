@@ -15,3 +15,7 @@ std::string Player::getName() const
     return Name;
 }
 
+void Player::SetRank(int newRank)
+{
+    Rank = newRank;
+}
