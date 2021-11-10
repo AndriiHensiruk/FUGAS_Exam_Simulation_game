@@ -1,6 +1,6 @@
 #include "TeamManager.h"
-#include <iostream>
 
+// create a team 
 Team TeamManager::GenerateNewTeam(std::string TeamName)
 {
 	PlayerManager playermanager;
@@ -12,14 +12,37 @@ Team TeamManager::GenerateNewTeam(std::string TeamName)
 	for (int i = 0; i < 5; i++)
 	{
 		newPlayerlist[i] = playermanager.RandPlayer();
+		std::cout << newPlayerlist[i] << "\n";
 		newHerolist[i] = heromanager.RandHero();
-		
+		std::cout << newHerolist[i] << "\n\n";
+
 	}
 
 	Team team(TeamName, newPlayerlist, newHerolist);
 	return team;
 }
 
+Team TeamManager::GenerateNewTeamOne(std::string TeamName)
+{
+	PlayerManager playermanager = PlayerManager();
+	HeroManager heromanager = HeroManager();
+
+	Player newPlayerlist[5];
+	Hero newHerolist[5];
+
+	for (int i = 0; i < 5; i++)
+	{
+		newPlayerlist[i] = playermanager.RandPlayerOne();
+		std::cout << newPlayerlist[i] << "\n";
+		newHerolist[i] = heromanager.RandHeroOne();
+		std::cout << newHerolist[i] << "\n\n";
+	}
+
+	Team team(TeamName, newPlayerlist, newHerolist);
+	return team;
+}
+
+// team information 
 void TeamManager::GetTeamInfo(Team& team)
 {
 	PlayerManager playermanager;
@@ -27,14 +50,14 @@ void TeamManager::GetTeamInfo(Team& team)
 
 	std::cout << "Team: " << team.Name << "\n";
 	std::cout << "Players" << "\n";
-	for (auto element : team.PlayerList)
+	for (auto element : team.Playerslist)
 	{
-		playermanager.showPlayerInfo(element);
+		playermanager.ShowPlayerInfo(element);
 	}
 
 	std::cout << "Heroes" << "\n";
-	for (auto element : team.HerosList)
+	for (auto element : team.Heroeslist)
 	{
-		heromanager.showHeroInfo(element);
+		heromanager.ShowHeroInfo(element);
 	}
 }

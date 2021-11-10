@@ -22,17 +22,28 @@ public:
 		{17,  "dragon", (rand() % 100) }
 	};
 	
-	Player CreatePlayer(Player& nyw_player);
+	PlayerManager() {}
 
-	Player getPlayerByName(std::string name);
+	PlayerManager(Player& players)
+	{
+	players: this->playersList;
+	}
 
-	Player getPlayerById(int id);
 
-	void showPlayerInfo(Player player);
+	Player CreatePlayer(Player& new_player);
+
+	Player GetPlayerByName(std::string name);
+
+	Player GetPlayerById(int id);
 
 	void DeletePlayer(int index);
 
 	Player RandPlayer();
 
-};
+	Player RandPlayerOne();
 
+
+
+	void  ShowPlayerInfo(Player  player);
+
+};

@@ -1,19 +1,24 @@
 #pragma once
-#include "string"
+#include "Player.h"
+#include <iostream>
 
 class Hero
 {
 public:
-    int Id;
     std::string Name;
+    int ID;
     int HP;
-    long Damage;
+    int Damage;
 
-    
+    Hero() {}
+    Hero(int ID, std::string Name, int HP, int Damage);
 
-    long getId() const;
-    int getHP() const;
-    long getDamage() const;
-    std::string getName() const;
+    std::string GetName();
+    int GetId();
+    int GetDamage();
+    int GetHP();
+
+    int SetHP(int hp);
+
+    friend std::ostream& operator<< (std::ostream& out, const Hero& hero);
 };
-

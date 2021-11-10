@@ -1,12 +1,12 @@
-
 #include "Session.h"
+
 
 int Session::GetTeamHP(Team& team)
 {
     int SumHP = 0;
-    for (auto hero : team.HerosList)
+    for (auto hero : team.Heroeslist)
     {
-        SumHP += hero.getHP();
+        SumHP += hero.GetHP();
     }
     return SumHP;
 }
@@ -14,9 +14,9 @@ int Session::GetTeamHP(Team& team)
 int Session::GetTeamDamage(Team& team)
 {
     int SumDamage = 0;
-    for (auto hero : team.HerosList)
+    for (auto hero : team.Heroeslist)
     {
-        SumDamage += hero.getDamage();
+        SumDamage += hero.GetDamage();
     }
     return SumDamage;
 }

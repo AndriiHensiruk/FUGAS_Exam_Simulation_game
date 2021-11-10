@@ -2,6 +2,7 @@
 #include "TeamManager.h"
 #include "Team.h"
 
+
 void GameManager::PerformGameSession()
 {
 	std::cout << "Start Game" << "\n\n";
@@ -14,7 +15,7 @@ void GameManager::PerformGameSession()
 
 
 	std::cout << "\nSecond team:\t" << name_team_two << "\n\n";
-	Team team2 = teamManager.GenerateNewTeam(name_team_two);
+	Team team2 = teamManager.GenerateNewTeamOne(name_team_two);
 
 
 	Session session;
@@ -46,16 +47,16 @@ void GameManager::PerformGameSession()
 
 void GameManager::AddRank(Team& winnerTeam)
 {
-	for (auto& player : winnerTeam.PlayerList)
+	for (auto& player : winnerTeam.Playerslist)
 	{
-		player.SetRank(player.getRank() + 25);
+		player.SetRank(player.GetRank() + 25);
 	}
 }
 
 void GameManager::RemoveRank(Team& looserTeam)
 {
-	for (auto& player : looserTeam.PlayerList)
+	for (auto& player : looserTeam.Playerslist)
 	{
-		player.SetRank(player.getRank() - 25);
+		player.SetRank(player.GetRank() - 25);
 	}
 }

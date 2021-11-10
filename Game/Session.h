@@ -1,7 +1,7 @@
 #pragma once
 #include <ctime>
 #include "Team.h"
-#include<iostream>
+
 class Session
 {
 public:
@@ -11,7 +11,7 @@ public:
     Team TeamTwo;
     Team Loser;
 
-    Session() {};
+    Session() {}
 
     // count the total number of HP 
     int GetTeamHP(Team& team);
@@ -21,4 +21,3 @@ public:
     void CalculateWinner();
 
 };
-

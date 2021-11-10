@@ -1,5 +1,5 @@
 #include "HeroManager.h"
-#include<iostream>
+
 
 Hero HeroManager::CreateHero(Hero& nyw_hero)
 {
@@ -15,7 +15,7 @@ Hero HeroManager::CreateHero(Hero& nyw_hero)
 	for (int i = 0; i < 5; i++)
 	{
 		nyw_hero.Name = temph[i];
-		nyw_hero.Id = rand() % 100;
+		nyw_hero.ID = rand() % 100;
 		nyw_hero.HP = rand() % 100;
 		
 
@@ -30,27 +30,27 @@ Hero HeroManager::CreateHero(Hero& nyw_hero)
     return nyw_hero;
 }
 
-Hero HeroManager::getHeroByName(std::string name)
+Hero HeroManager::GetHeroByName(std::string name)
 {
 	for (int i = 0; i < herosList.size(); i++)
 	{
-		if (herosList[i].getName() == name)
+		if (herosList[i].GetName() == name)
 			return herosList[i];
 	}
 }
 
-Hero HeroManager::getHeroByById(int id)
+Hero HeroManager::GetHeroByById(int id)
 {
 	for (int i = 0; i < herosList.size(); i++)
 	{
-		if (herosList[i].getId() == id)
+		if (herosList[i].GetId() == id)
 			return herosList[i];
 	}
 }
 
-void HeroManager::showHeroInfo(Hero hero)
+void HeroManager::ShowHeroInfo(Hero hero)
 {
-	std::cout << "ID = " << hero.getId() << "\tName\t" << hero.getName() << "\tHP\t" << hero.getHP() << "\tDamage\t" << hero.getDamage() << "\n";
+	std::cout << "ID = " << hero.GetId() << "\tName\t" << hero.GetName() << "\tHP\t" << hero.GetHP() << "\tDamage\t" << hero.GetDamage() << "\n";
 }
 
 void HeroManager::DeleteHero(int index)
@@ -59,8 +59,31 @@ void HeroManager::DeleteHero(int index)
 	std::advance(iterator, index);
 	herosList.erase(iterator);
 }
+void HeroManager::Print()
+{
+	for (auto elem : herosList)
+	{
+		std::cout << elem << "\n";
+	}
+}
+
+// random choice of the hero 
 
 Hero HeroManager::RandHero()
+{
+	srand((unsigned)time(NULL));
+	int a;
+	a = (rand() % herosList.size());
+	Hero hero = herosList[a];
+
+	std::vector<Hero>::iterator iterator = herosList.begin();
+	std::advance(iterator, a);
+	herosList.erase(iterator);
+
+	return hero;
+}
+
+Hero HeroManager::RandHeroOne()
 {
 	srand((unsigned)time(NULL));
 	int a;
