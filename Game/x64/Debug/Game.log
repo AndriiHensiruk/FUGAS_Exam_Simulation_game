@@ -1,0 +1,18 @@
+﻿  Game.cpp
+  GameManager.cpp
+C:\Users\Professional\Documents\FUGAS_Exam_Simulation_game-dev\Game\PlayerManager.h(29,1): warning C4102: players: неиспользованная метка
+  Hero.cpp
+  HeroManager.cpp
+  Player.cpp
+  PlayerManager.cpp
+C:\Users\Professional\Documents\FUGAS_Exam_Simulation_game-dev\Game\PlayerManager.h(29,1): warning C4102: players: неиспользованная метка
+  Session.cpp
+  Team.cpp
+  TeamManager.cpp
+C:\Users\Professional\Documents\FUGAS_Exam_Simulation_game-dev\Game\PlayerManager.h(29,1): warning C4102: players: неиспользованная метка
+  Создание кода...
+C:\Users\Professional\Documents\FUGAS_Exam_Simulation_game-dev\Game\PlayerManager.cpp(39): warning C4715: PlayerManager::GetPlayerByName: значение возвращается не при всех путях выполнения
+C:\Users\Professional\Documents\FUGAS_Exam_Simulation_game-dev\Game\PlayerManager.cpp(48): warning C4715: PlayerManager::GetPlayerById: значение возвращается не при всех путях выполнения
+C:\Users\Professional\Documents\FUGAS_Exam_Simulation_game-dev\Game\HeroManager.cpp(49): warning C4715: HeroManager::GetHeroByById: значение возвращается не при всех путях выполнения
+C:\Users\Professional\Documents\FUGAS_Exam_Simulation_game-dev\Game\HeroManager.cpp(40): warning C4715: HeroManager::GetHeroByName: значение возвращается не при всех путях выполнения
+  Game.vcxproj -> C:\Users\Professional\Documents\FUGAS_Exam_Simulation_game-dev\Game\x64\Debug\Game.exe

@@ -2,41 +2,12 @@
 #include <iostream>
 #include <string>
 #include <vector>
-<<<<<<< HEAD
-<<<<<<< HEAD
-class Player
-{
-private:
-    int Id;
-    std::string Name;
-    int Rang;
-    std::vector<Player>players;
-    
-public:
-    
-   
-  
-    void CreatePlayer();
-    void DeletePlayer();
-    long GetPlayerById() const;
-    int ShowPlayerInfo() const;
-    std::string GetPlayerByName() const;
-};
-=======
 
 
 
 class Player
 {
 public:
-=======
-
-
-
-class Player
-{
-public:
->>>>>>> dev
     int ID;
     std::string Name;
     int Rank;
@@ -62,7 +33,3 @@ public:
     friend std::ostream& operator<< (std::ostream& out, const Player& player);
 };
 
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> dev

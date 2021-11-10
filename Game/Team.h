@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-#include <string>
-#include <vector>
-class Team
-{
-private:
-    
-    std::string Name;
-    int numTNames;
-public:
-
-    Team();
-    ~Team();
-    std::vector<std::string> nTeamContainer;
-
-
-    
-=======
-=======
->>>>>>> dev
 #pragma once
 #include "Player.h"
 #include "Hero.h"
@@ -40,8 +19,4 @@ public:
 	Team(std::string name, Player playersList[5], Hero heroesList[5]);
 
 
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> dev
 };
