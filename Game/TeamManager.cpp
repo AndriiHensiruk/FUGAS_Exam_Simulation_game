@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "Team.h"
 
 Team::Team()
@@ -20,6 +21,8 @@ Team::Team()
 	//delete our string arrays
 	delete[] tempT;
 =======
+=======
+>>>>>>> dev
 #include "TeamManager.h"
 
 // create a team 
@@ -82,5 +85,8 @@ void TeamManager::GetTeamInfo(Team& team)
 	{
 		heromanager.ShowHeroInfo(element);
 	}
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
 }

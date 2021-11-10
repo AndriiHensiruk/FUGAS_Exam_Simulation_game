@@ -41,9 +41,12 @@
     </ClCompile>
     <ClCompile Include="HeroManager.cpp">
       <Filter>Исходные файлы</Filter>
+<<<<<<< HEAD
     </ClCompile>
     <ClCompile Include="TeamManager.cpp">
       <Filter>Файлы ресурсов</Filter>
+=======
+>>>>>>> dev
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -70,12 +73,15 @@
     </ClInclude>
     <ClInclude Include="HeroManager.h">
       <Filter>Файлы заголовков</Filter>
+<<<<<<< HEAD
     </ClInclude>
     <ClInclude Include="PlayerManager.h">
       <Filter>Файлы ресурсов</Filter>
     </ClInclude>
     <ClInclude Include="Team.h">
       <Filter>Файлы ресурсов</Filter>
+=======
+>>>>>>> dev
     </ClInclude>
   </ItemGroup>
 </Project>

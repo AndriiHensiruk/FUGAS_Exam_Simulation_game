@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma once
 #include "Player.h"
 
@@ -20,6 +21,8 @@ std::vector< Player > players{
 {16, "phoenix", 100},
 {17,  "dragon", 100 }
 =======
+=======
+>>>>>>> dev
 #include "Player.h"
 #include <vector>
 class PlayerManager
@@ -68,5 +71,8 @@ public:
 
 	void  ShowPlayerInfo(Player  player);
 
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
 };

@@ -1,5 +1,6 @@
 ﻿  Game.cpp
 <<<<<<< HEAD
+<<<<<<< HEAD
   HeroManager.cpp
   PlayerManager.cpp
   TeamManager.cpp
@@ -26,6 +27,24 @@ C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cp
   TeamManager.cpp
 C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.h(29,1): warning C4102: players: неиспользованная метка
   Создание кода...
+=======
+  GameManager.cpp
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.h(29,1): warning C4102: players: неиспользованная метка
+  Hero.cpp
+  HeroManager.cpp
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(35,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(44,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Player.cpp
+  PlayerManager.cpp
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.h(29,1): warning C4102: players: неиспользованная метка
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(34,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(43,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Session.cpp
+  Team.cpp
+  TeamManager.cpp
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.h(29,1): warning C4102: players: неиспользованная метка
+  Создание кода...
+>>>>>>> dev
 C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(39): warning C4715: PlayerManager::GetPlayerByName: значение возвращается не при всех путях выполнения
 C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(48): warning C4715: PlayerManager::GetPlayerById: значение возвращается не при всех путях выполнения
 C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(49): warning C4715: HeroManager::GetHeroByById: значение возвращается не при всех путях выполнения

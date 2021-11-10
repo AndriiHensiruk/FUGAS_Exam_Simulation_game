@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <string>
 #include <vector>
 class Team
@@ -16,6 +17,8 @@ public:
 
     
 =======
+=======
+>>>>>>> dev
 #pragma once
 #include "Player.h"
 #include "Hero.h"
@@ -37,5 +40,8 @@ public:
 	Team(std::string name, Player playersList[5], Hero heroesList[5]);
 
 
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
 };

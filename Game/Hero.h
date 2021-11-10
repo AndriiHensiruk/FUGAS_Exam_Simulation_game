@@ -1,12 +1,18 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #include <string>
 #include <vector>
 =======
+=======
+>>>>>>> dev
 #pragma once
 #include "Player.h"
 #include <iostream>
 
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
 class Hero
 {
@@ -15,6 +21,7 @@ public:
     int ID;
     int HP;
     int Damage;
+<<<<<<< HEAD
 <<<<<<< HEAD
     std::string Name;
     int numHNames;
@@ -32,6 +39,8 @@ public:
     std::string GetHeroByName() const;
 };
 =======
+=======
+>>>>>>> dev
 
     Hero() {}
     Hero(int ID, std::string Name, int HP, int Damage);
@@ -44,5 +53,9 @@ public:
     int SetHP(int hp);
 
     friend std::ostream& operator<< (std::ostream& out, const Hero& hero);
+<<<<<<< HEAD
+};
+>>>>>>> dev
+=======
 };
 >>>>>>> dev

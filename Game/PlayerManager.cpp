@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <string>
 #include "Player.h"
 
@@ -48,6 +49,39 @@ Player PlayerManager::CreatePlayer(Player& nyw_player)
     return nyw_player;
 }
 
+=======
+#include "PlayerManager.h"
+#include<iostream>
+Player PlayerManager::CreatePlayer(Player& nyw_player)
+{
+
+    //create character names
+    std::string* temp = new std::string[10];
+    temp[0] = "Raphael";
+    temp[1] = "Elizabeth";
+    temp[2] = "Lucius";
+    temp[3] = "Seigfried";
+    temp[4] = "Edward";
+    temp[5] = "Mirabelle";
+    temp[6] = "Abraham";
+    temp[7] = "Hildegard";
+    temp[8] = "Fendrel";	//perhaps in the future could add in some way to store titles for a character | ex. Fendrel the Wicked
+    temp[9] = "Ulric";
+    //store them in the name vector
+    for (int i = 0; i < 10; i++)
+    {
+        nyw_player.Name = temp[i];
+        nyw_player.ID = rand() % 100;
+        nyw_player.Rank = rand() % 100;
+
+        playersList.push_back(nyw_player);
+    }
+    //delete our string arrays
+    delete[] temp;
+    return nyw_player;
+}
+
+>>>>>>> dev
 Player PlayerManager::GetPlayerByName(std::string name)
 {
 	for (int i = 0; i < playersList.size(); i++)
@@ -55,6 +89,9 @@ Player PlayerManager::GetPlayerByName(std::string name)
 		if (playersList[i].GetName() == name)
 			return playersList[i];
 	}
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
 }
 
@@ -83,8 +120,11 @@ void PlayerManager::DeletePlayer(int index)
 Player PlayerManager::RandPlayer()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return Rang;
 =======
+=======
+>>>>>>> dev
 	srand((unsigned)time(NULL));
 	int a;
 	a = (rand() % playersList.size());
@@ -92,6 +132,9 @@ Player PlayerManager::RandPlayer()
 
 	DeletePlayer(a);
 	return player;
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
 }
 

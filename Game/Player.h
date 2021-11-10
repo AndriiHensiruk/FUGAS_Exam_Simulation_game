@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 <<<<<<< HEAD
+<<<<<<< HEAD
 class Player
 {
 private:
@@ -28,6 +29,14 @@ public:
 class Player
 {
 public:
+=======
+
+
+
+class Player
+{
+public:
+>>>>>>> dev
     int ID;
     std::string Name;
     int Rank;
@@ -53,4 +62,7 @@ public:
     friend std::ostream& operator<< (std::ostream& out, const Player& player);
 };
 
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev

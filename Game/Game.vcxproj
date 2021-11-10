@@ -146,6 +146,11 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerManager.cpp" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <ClCompile Include="Session.cpp" />
+    <ClCompile Include="Team.cpp" />
+>>>>>>> dev
 =======
     <ClCompile Include="Session.cpp" />
     <ClCompile Include="Team.cpp" />
@@ -159,7 +164,13 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerManager.h" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClInclude Include="Team.h" />
+=======
+    <ClInclude Include="Session.h" />
+    <ClInclude Include="Team.h" />
+    <ClInclude Include="TeamManager.h" />
+>>>>>>> dev
 =======
     <ClInclude Include="Session.h" />
     <ClInclude Include="Team.h" />

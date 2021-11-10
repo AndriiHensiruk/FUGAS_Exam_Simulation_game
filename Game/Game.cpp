@@ -8,6 +8,7 @@
 int main()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	Player player;
 
 	player.CreatePlayer();
@@ -20,6 +21,10 @@ int main()
 	std::string hName = hero.GetHeroByName();
 	std::cout << hName << std::endl;*/
 
+=======
+	GameManager gamemanager;
+	gamemanager.PerformGameSession();
+>>>>>>> dev
 =======
 	GameManager gamemanager;
 	gamemanager.PerformGameSession();
