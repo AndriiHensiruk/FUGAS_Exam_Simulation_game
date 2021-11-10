@@ -1,11 +1,13 @@
 ﻿#include<iostream>
+#include <string>
 #include <vector>
-#include "Player.h"
-#include "Hero.h"
+#include "GameManager.h"
+
 
 
 int main()
 {
+<<<<<<< HEAD
 	Player player;
 
 	player.CreatePlayer();
@@ -18,6 +20,10 @@ int main()
 	std::string hName = hero.GetHeroByName();
 	std::cout << hName << std::endl;*/
 
+=======
+	GameManager gamemanager;
+	gamemanager.PerformGameSession();
+>>>>>>> dev
 	
 
 	return 0;

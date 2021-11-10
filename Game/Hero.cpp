@@ -1,21 +1,41 @@
-#include <string>
 #include "Hero.h"
-long Hero::getCurrentId() const
+
+Hero::Hero(int id, std::string name, int HP, int damage)
 {
-    return Id;
+    this->ID = id;
+    this->Name = name;
+    this->HP = HP;
+    this->Damage = damage;
 }
 
-int Hero::getHP() const
+std::string Hero::GetName()
 {
-    return HP;
-}
+    return Name;
+};
 
-int Hero::getDamage() const
+int Hero::GetId()
+{
+    return ID;
+};
+
+int Hero::GetDamage()
 {
     return Damage;
 }
 
-std::string Hero::getHeroName() const
+int Hero::GetHP()
 {
-    return Name;
+    return HP;
+}
+
+int Hero::SetHP(int hp)
+{
+    this->HP = hp;
+    return hp;
+}
+
+std::ostream& operator<< (std::ostream& uot, const Hero& hero)
+{
+    uot << "Name hero\t" << hero.Name << "\tDamage\t" << hero.Damage << "\tHP\t" << hero.HP;
+    return uot;
 }

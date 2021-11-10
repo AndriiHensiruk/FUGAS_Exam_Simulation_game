@@ -1,12 +1,21 @@
+<<<<<<< HEAD
 
 #include <string>
 #include <vector>
+=======
+#pragma once
+#include "Player.h"
+#include <iostream>
+
+>>>>>>> dev
 class Hero
 {
-private:
-    int Id;
+public:
+    std::string Name;
+    int ID;
     int HP;
     int Damage;
+<<<<<<< HEAD
     std::string Name;
     int numHNames;
 public:
@@ -22,3 +31,18 @@ public:
     void DeleteHero();
     std::string GetHeroByName() const;
 };
+=======
+
+    Hero() {}
+    Hero(int ID, std::string Name, int HP, int Damage);
+
+    std::string GetName();
+    int GetId();
+    int GetDamage();
+    int GetHP();
+
+    int SetHP(int hp);
+
+    friend std::ostream& operator<< (std::ostream& out, const Hero& hero);
+};
+>>>>>>> dev

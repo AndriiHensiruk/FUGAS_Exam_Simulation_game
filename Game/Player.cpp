@@ -1,16 +1,29 @@
-#include <string>
 #include "Player.h"
-long Player::getCurrentId() const
+
+
+std::string Player::GetName()
 {
-    return Id;
+	return Name;
 }
 
-int Player::getRank() const
+int Player::GetId()
 {
-    return Rank;
+	return ID;
 }
 
-std::string Player::getPlayerName() const
+int Player::GetRank()
 {
-    return Name;
+	return Rank;
+}
+
+void Player::SetRank(int newRank)
+{
+	Rank = newRank;
+}
+
+// overload the output operator 
+std::ostream& operator<< (std::ostream& out, const Player& player)
+{
+	out << "Name player\t" << player.Name << "\tRank\t" << player.Rank;
+	return out;
 }

@@ -1,4 +1,5 @@
 ﻿  Game.cpp
+<<<<<<< HEAD
   HeroManager.cpp
   PlayerManager.cpp
   TeamManager.cpp
@@ -8,3 +9,26 @@ Game.obj : error LNK2019: ссылка на неразрешенный внеш�
 PlayerManager.obj : error LNK2001: неразрешенный внешний символ "public: __thiscall Player::~Player(void)" (??1Player@@QAE@XZ).
 HeroManager.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Hero::~Hero(void)" (??1Hero@@QAE@XZ) в функции "public: void __thiscall Hero::DeleteHero(void)" (?DeleteHero@Hero@@QAEXXZ).
 C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\Debug\Game.exe : fatal error LNK1120: неразрешенных внешних элементов: 2
+=======
+  GameManager.cpp
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.h(29,1): warning C4102: players: неиспользованная метка
+  Hero.cpp
+  HeroManager.cpp
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(35,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(44,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Player.cpp
+  PlayerManager.cpp
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.h(29,1): warning C4102: players: неиспользованная метка
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(34,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(43,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Session.cpp
+  Team.cpp
+  TeamManager.cpp
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.h(29,1): warning C4102: players: неиспользованная метка
+  Создание кода...
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(39): warning C4715: PlayerManager::GetPlayerByName: значение возвращается не при всех путях выполнения
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\PlayerManager.cpp(48): warning C4715: PlayerManager::GetPlayerById: значение возвращается не при всех путях выполнения
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(49): warning C4715: HeroManager::GetHeroByById: значение возвращается не при всех путях выполнения
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\HeroManager.cpp(40): warning C4715: HeroManager::GetHeroByName: значение возвращается не при всех путях выполнения
+  Game.vcxproj -> C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\Debug\Game.exe
+>>>>>>> dev
