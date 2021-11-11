@@ -87,12 +87,12 @@ Hero HeroManager::RandHeroOne()
 {
 	srand((unsigned)time(NULL));
 	int a;
-	a = (rand() % herosList.size());
-	Hero hero = herosList[a];
+	a = (rand() % herosList_two.size());
+	Hero hero = herosList_two[a];
 
-	std::vector<Hero>::iterator iterator = herosList.begin();
+	std::vector<Hero>::iterator iterator = herosList_two.begin();
 	std::advance(iterator, a);
-	herosList.erase(iterator);
+	herosList_two.erase(iterator);
 
 	return hero;
 }

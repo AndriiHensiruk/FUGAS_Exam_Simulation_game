@@ -16,6 +16,10 @@ public:
 		{7,"Frank",(rand() % 100),(rand() % 100) },
 		{8,"Hills",(rand() % 100),(rand() % 100) },
 		{9,"Irwin",(rand() % 100),(rand() % 100) },
+	
+	};
+
+	std::vector<Hero>herosList_two{
 		{10,"Jones",(rand() % 100),(rand() % 100) },
 		{11,"Klein",(rand() % 100),(rand() % 100) },
 		{12,"Lopez",(rand() % 100),(rand() % 100) },

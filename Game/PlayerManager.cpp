@@ -75,8 +75,8 @@ Player PlayerManager::RandPlayerOne()
 {
 	srand((unsigned)time(NULL));
 	int a;
-	a = (rand() % playersList.size());
-	Player player = playersList[a];
+	a = (rand() % playersList_two.size());
+	Player player = playersList_two[a];
 
 	DeletePlayer(a);
 	return player;
