@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 C:\Users\Professional\Documents\FUGAS_Exam_Simulation_game-dev\Game\x64\Debug\Game.exe
+=======
+C:\Users\Professional\Documents\testing_fugas_praktic\Exam\Game\x64\Debug\Game.exe
+>>>>>>> dev

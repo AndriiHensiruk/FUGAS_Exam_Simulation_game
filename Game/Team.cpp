@@ -9,4 +9,9 @@ Team::Team(std::string name, Player playersList[5], Hero heroesList[5])
 		Playerslist[i] = playersList[i];
 		Heroeslist[i] = heroesList[i];
 	}
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> dev
 }
